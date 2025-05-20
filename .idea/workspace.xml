@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1839cce-0747-4308-9000-50cc91a54371" name="Changes" comment="" />
+    <list default="true" id="a1839cce-0747-4308-9000-50cc91a54371" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/algaworks/junit/blog/negocio/CalculadoraGanhosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/algaworks/junit/utilidade/ContaBancariaBDDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/ContaBancariaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/ContaBancariaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/SaudacaoUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/SaudacaoUtilTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,6 +50,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CalculadoraGanhosTest.deveCalcularGanhos.executor": "Run",
+    "JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium.executor": "Run",
+    "JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException.executor": "Run",
+    "JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo.executor": "Run",
+    "JUnit.ContaBancariaBDDTest.executor": "Run",
     "JUnit.ContaBancariaTest.deveAdicionarSaldo.executor": "Run",
     "JUnit.ContaBancariaTest.deveRealizarDeposito.executor": "Run",
     "JUnit.ContaBancariaTest.deveRealizarSaque.executor": "Run",
@@ -80,6 +92,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.algaworks.junit.blog.negocio" />
       <recent name="com.algaworks.junit.utilidade" />
     </key>
   </component>
@@ -88,8 +101,24 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaBancariaTest">
-    <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo">
+    <configuration name="CalculadoraGanhosTest.deveCalcularGanhosSemPremium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.blog.negocio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.blog.negocio" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.blog.negocio.CalculadoraGanhosTest" />
+      <option name="METHOD_NAME" value="deveCalcularGanhosSemPremium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
@@ -97,14 +126,46 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest.ContaBancariaComSaldo" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior" />
+      <option name="METHOD_NAME" value="deveLancarException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest.ContaBancariaComSaldo" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior" />
+      <option name="METHOD_NAME" value="naoDeveAlterarSaldo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaBDDTest$ContaBancariaSemSaldo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaTest.naoDeveRealizarDepositoParaValorMenorIgualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaBancariaBDDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
@@ -113,57 +174,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="naoDeveRealizarDepositoParaValorMenorIgualZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaBancariaTest.naoDeveRealizarDepositoParaValorNulo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="naoDeveRealizarDepositoParaValorNulo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaBancariaTest.naoDeveRealizarSaqueParaValorIgualMenorQueZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="naoDeveRealizarSaqueParaValorIgualMenorQueZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaBancariaTest.naoDeveRealizarSaqueSeSaldoInsuficiente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
-      <option name="METHOD_NAME" value="naoDeveRealizarSaqueSeSaldoInsuficiente" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,19 +192,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ContaBancariaTest" />
-      <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarDepositoParaValorMenorIgualZero" />
-      <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarDepositoParaValorNulo" />
-      <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarSaqueParaValorIgualMenorQueZero" />
-      <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarSaqueSeSaldoInsuficiente" />
+      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" />
+      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
+      <item itemvalue="JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium" />
+      <item itemvalue="JUnit.ContaBancariaBDDTest" />
+      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaBancariaTest" />
-        <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarDepositoParaValorMenorIgualZero" />
-        <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarDepositoParaValorNulo" />
-        <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarSaqueSeSaldoInsuficiente" />
-        <item itemvalue="JUnit.ContaBancariaTest.naoDeveRealizarSaqueParaValorIgualMenorQueZero" />
+        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
+        <item itemvalue="JUnit.ContaBancariaBDDTest" />
+        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" />
+        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" />
+        <item itemvalue="JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium" />
       </list>
     </recent_temporary>
   </component>

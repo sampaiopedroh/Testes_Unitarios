@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1839cce-0747-4308-9000-50cc91a54371" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/algaworks/junit/blog/negocio/CalculadoraGanhosTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/algaworks/junit/utilidade/ContaBancariaBDDTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/algaworks/junit/ecommerce/CarrinhoCompraTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/ContaBancariaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/ContaBancariaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/SaudacaoUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/algaworks/junit/utilidade/SaudacaoUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/algaworks/junit/ecommerce/CarrinhoCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algaworks/junit/ecommerce/CarrinhoCompra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -52,8 +51,24 @@
   "keyToString": {
     "JUnit.CalculadoraGanhosTest.deveCalcularGanhos.executor": "Run",
     "JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComAdicao$DeveAdicionarItem.deveAdicionarItem.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComAdicao$DeveAdicionarQuantidade.deveAdicionarQuantidade.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComAdicao$DeveFalhar$DeeveFalharPorQuantidade.deveFalharPorQuantidadeMenor1.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComAdicao$DeveFalhar$DeveFalharPorProdutoNulo.deveFalharComProdutoNulo.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComAdicaoEmUmDeUmProduto$DeveAdicionarQuantidadeEmUm.deveExcluirProduto.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveADiminuirQuantidadeEmUm.deveAumentarQuantidadeProduto.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveExcluirProduto.deveExcluirProduto.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComLimpezaCarrinho.deveEsvaziarCarrinho.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComQuantidadeTotal.deveRetornarQuantidadeTotal.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesComValorTotal.deveRetornarValorTotalDoCarrinho.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesDeExclusão$DeveExcluirProduto.deveExcluirProduto.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesDeExclusão$NaoDeveExcluirProduto$DeveFalharPorProdutoNaoConstarNoCarrinho.deveFalharPorProdutoNaoConstarNoCarrinho.executor": "Run",
+    "JUnit.CarrinhoCompraTest$TestesDeExclusão$NaoDeveExcluirProduto$NaoDeveExcluirPorProdutoNulo.deveFalharPorProdutoNulo.executor": "Run",
+    "JUnit.CarrinhoCompraTest.deveRetornarItens.executor": "Run",
+    "JUnit.CarrinhoCompraTest.executor": "Run",
     "JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException.executor": "Run",
     "JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo.executor": "Run",
+    "JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo.executor": "Run",
     "JUnit.ContaBancariaBDDTest.executor": "Run",
     "JUnit.ContaBancariaTest.deveAdicionarSaldo.executor": "Run",
     "JUnit.ContaBancariaTest.deveRealizarDeposito.executor": "Run",
@@ -92,6 +107,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.algaworks.junit.ecommerce" />
       <recent name="com.algaworks.junit.blog.negocio" />
       <recent name="com.algaworks.junit.utilidade" />
     </key>
@@ -101,80 +117,81 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo">
-    <configuration name="CalculadoraGanhosTest.deveCalcularGanhosSemPremium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CarrinhoCompraTest">
+    <configuration name="CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveExcluirProduto.deveExcluirProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.blog.negocio.*" />
+          <option name="PATTERN" value="com.algaworks.junit.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.blog.negocio" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.blog.negocio.CalculadoraGanhosTest" />
-      <option name="METHOD_NAME" value="deveCalcularGanhosSemPremium" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest.TestesComDiminuicaoEmUmDeUmProduto" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveExcluirProduto" />
+      <option name="METHOD_NAME" value="deveExcluirProduto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoCompraTest$TestesComLimpezaCarrinho.deveEsvaziarCarrinho" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="PATTERN" value="com.algaworks.junit.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest.ContaBancariaComSaldo" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior" />
-      <option name="METHOD_NAME" value="deveLancarException" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest$TestesComLimpezaCarrinho" />
+      <option name="METHOD_NAME" value="deveEsvaziarCarrinho" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoCompraTest$TestesComQuantidadeTotal.deveRetornarQuantidadeTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="PATTERN" value="com.algaworks.junit.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest.ContaBancariaComSaldo" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior" />
-      <option name="METHOD_NAME" value="naoDeveAlterarSaldo" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest$TestesComQuantidadeTotal" />
+      <option name="METHOD_NAME" value="deveRetornarQuantidadeTotal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaBDDTest$ContaBancariaSemSaldo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoCompraTest$TestesComValorTotal.deveRetornarValorTotalDoCarrinho" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="PATTERN" value="com.algaworks.junit.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest$TestesComValorTotal" />
+      <option name="METHOD_NAME" value="deveRetornarValorTotalDoCarrinho" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaBancariaBDDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoCompraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="PATTERN" value="com.algaworks.junit.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
-      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaBDDTest" />
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.ecommerce.CarrinhoCompraTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,19 +209,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" />
-      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
-      <item itemvalue="JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium" />
-      <item itemvalue="JUnit.ContaBancariaBDDTest" />
-      <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" />
+      <item itemvalue="JUnit.CarrinhoCompraTest" />
+      <item itemvalue="JUnit.CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveExcluirProduto.deveExcluirProduto" />
+      <item itemvalue="JUnit.CarrinhoCompraTest$TestesComLimpezaCarrinho.deveEsvaziarCarrinho" />
+      <item itemvalue="JUnit.CarrinhoCompraTest$TestesComQuantidadeTotal.deveRetornarQuantidadeTotal" />
+      <item itemvalue="JUnit.CarrinhoCompraTest$TestesComValorTotal.deveRetornarValorTotalDoCarrinho" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaSemSaldo" />
-        <item itemvalue="JUnit.ContaBancariaBDDTest" />
-        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.naoDeveAlterarSaldo" />
-        <item itemvalue="JUnit.ContaBancariaBDDTest$ContaBancariaComSaldo$SaqueValorMaior.deveLancarException" />
-        <item itemvalue="JUnit.CalculadoraGanhosTest.deveCalcularGanhosSemPremium" />
+        <item itemvalue="JUnit.CarrinhoCompraTest" />
+        <item itemvalue="JUnit.CarrinhoCompraTest$TestesComLimpezaCarrinho.deveEsvaziarCarrinho" />
+        <item itemvalue="JUnit.CarrinhoCompraTest$TestesComQuantidadeTotal.deveRetornarQuantidadeTotal" />
+        <item itemvalue="JUnit.CarrinhoCompraTest$TestesComValorTotal.deveRetornarValorTotalDoCarrinho" />
+        <item itemvalue="JUnit.CarrinhoCompraTest$TestesComDiminuicaoEmUmDeUmProduto$DeveExcluirProduto.deveExcluirProduto" />
       </list>
     </recent_temporary>
   </component>
